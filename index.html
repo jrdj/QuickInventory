@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <title>Quickie Inventory</title>
+</head>
+<body>
+<section class="hero is-">
+    <div class="hero-body">
+        <p class="title">Quickie Inventory</p>
+        <p class="subtitle">Mabilisang Imbentaryo</p>
+    </div>
+    <div class="container is-fluid">
+        <div class="columns is-desktop is-centered">
+            <div class="column">
+                <article class="panel is-link">
+                    <p class="panel-heading">
+                      PC Information
+                    </p>
+                    <div class="panel-block">
+                      <div class="control">
+                        <input type="file" id="uploadfile" onChange="readImage(this)">
+                      </div>
+                    </div>
+                    <div class="panel-block">
+                      <p class="control">
+                        <input class="input is-primary" type="text" placeholder="Location">
+                      </p>
+                    </div>
+                    <div class="panel-block">
+                        <p class="control">
+                          <input class="input is-primary" type="text" placeholder="PC #">
+                        </p>
+                      </div>
+                      <div class="panel-block">
+                        <p class="control">
+                          <input class="input is-primary" id="mobo" type="text" placeholder="MOBO / Motherboard">
+                        </p>
+                      </div>
+                      <div class="panel-block">
+                        <p class="control">
+                          <input class="input is-primary" id="cpu" type="text" placeholder="CPU / Processor">
+                        </p>
+                      </div>
+                      <div class="panel-block">
+                        <p class="control">
+                          <select class="input is-primary" id="ram">
+                            
+                          </select>
+                        </p>
+                      </div>
+                      <div class="panel-block">
+                        <p class="control">
+                          <input class="input is-primary" id="hdd" type="text" placeholder="HDD / Storage">
+                        </p>
+                      </div>
+                      <div class="panel-block">
+                        <p class="control">
+                          <select class="input is-primary" id="gpu">
+                            
+                          </select>
+                        </p>
+                      </div>
+                      <div class="panel-block">
+                        <p class="control">
+                            <textarea class="textarea is-primary" name="" id="" cols="30" rows="10" placeholder="Remarks"></textarea>
+                        </p>
+                      </div>
+                      <div class="panel-block">
+                        <div class="control">
+                          <button class="button is-link">Submit</button>
+                        </div>
+                      </div>
+                  </article>
+            </div>
+            <div class="column is-four-fifths">
+              <div class="panel is-success">
+                  <div class="panel-heading">Inventory<a href="javascript:loadDoc()" >R</a></div>
+                  <table class="table is-fullwidth is-striped">
+                    <thead>
+                        <tr>
+                            <th>LOCATION</th>
+                            <th>PC #</th>
+                            <th>MOBO</th>
+                            <th>CPU</th>
+                            <th>RAM</th>
+                            <th>HDD</th>
+                            <th>GPU</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>LOCATION</th>
+                            <th>PC #</th>
+                            <th>MOBO</th>
+                            <th>CPU</th>
+                            <th>RAM</th>
+                            <th>HDD</th>
+                            <th>GPU</th>
+                            <th>
+                                Remarks
+                            </th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr id="inventory">
+                           
+                        </tr>
+                    </tbody>
+                </table>
+    
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="getpcinfo.js"></script>]
+<script src="getinventory.js"></script>
+
+
+
+</body>
+</html>
